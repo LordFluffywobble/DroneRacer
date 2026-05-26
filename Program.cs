@@ -1,9 +1,12 @@
-﻿namespace DroneRacer;
+﻿using DroneRacer.Classes;
+
+namespace DroneRacer;
 
 class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        Maps p = new();
+        p.DroneList();
     }
 }
