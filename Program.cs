@@ -12,18 +12,4 @@ class Program
     }
 }
 
-        
-        
-        
-        // ActiveDrones aDrones = new();
-        // List<Drone> drones = aDrones.DroneList();
-
-        // Console.ForegroundColor = ConsoleColor.DarkBlue;
-        // Console.WriteLine($"{"Start", -15} {"Speed", -15} {"Target", -15} {"Time Elapsed", -15}\n");
-        // foreach (Drone drone in drones)
-        // {
-        //     Console.ForegroundColor = ConsoleColor.DarkYellow;
-        //     Console.WriteLine($"{drone.Start, -15} {drone.Speed, -15} {drone.Target, -15} {(drone.Target - drone.Start) / drone.Speed, -15}");
-        // }
-        // Console.ResetColor();
        
