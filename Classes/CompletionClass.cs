@@ -22,7 +22,20 @@ public class TaskCompletionDroneCounter()
     
     private static Task DroneCounter(Drone id)
     {
-        
+        var tsc = new TaskCompletionSource();
+
+        Task.Run(() =>
+        {
+            try
+            {
+                Console.WriteLine($"{id.Name} is starting it's flight");
+                DroneTaskAwaiter(id, tsc);
+            }
+            catch (Exception ex)
+            {
+                tsc.SetException(ex);
+            }
+        });
     }
 
     private static void DroneTaskAwaiter(Drone id, TaskCompletionSource tsc)
