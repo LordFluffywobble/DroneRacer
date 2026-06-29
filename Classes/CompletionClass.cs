@@ -23,7 +23,9 @@ public class TaskCompletionDroneCounter()
         {
             if (allTasks.IsFaulted)
             {
+                Console.ForegroundColor = ConsoleColor.DarkRed;
                 masterTsc.SetException(allTasks.Exception);
+                Console.ResetColor();
             }
             else
             {
